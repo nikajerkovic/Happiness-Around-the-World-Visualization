@@ -1,0 +1,114 @@
+.okvir {
+  position: relative;
+}
+
+.x-os-oznaka {
+  fill: black;
+  font-size: 1.4em;
+  text-transform: capitalize;
+}
+
+.y-os-oznaka {
+  fill: black;
+  font-size: 1.4em;
+  text-anchor: middle;
+  transform: rotate(-90deg);
+}
+
+.voronoi {
+  fill: transparent;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 2em;
+  letter-spacing: 0.08em;
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+
+.main__header {
+  font-size: 1.8rem;
+  line-height: 1.5rem;
+  color: initial;
+  transition: all 100ms ease-in;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__btn-group {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  margin: 10px;
+  outline: 0;
+  border: transparent;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.header__btn-group.active {
+  border-bottom: 2px solid #99d5cd;
+  text-decoration: none;
+  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+  color: #000;
+}
+
+.detalji {
+  opacity: 0;
+  position: absolute;
+  top: -14px;
+  left: 0;
+  padding: 0.6em 1em;
+  background: #fff;
+  line-height: 1.4em;
+  font-size: 14px;
+  border: 1px solid rgb(221, 221, 221);
+  z-index: 10;
+  transition: all 0.1s ease-out;
+  pointer-events: none;
+}
+
+.detalji:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: translate(-50%, 50%) rotate(45deg);
+  transform-origin: center center;
+  z-index: 10;
+}
+
+.detalji-drzava {
+  margin-bottom: 0.2em;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1em;
+  line-height: 1.4em;
+}

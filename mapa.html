@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="mapa.css">
+    </link>
+    <title>Mapa</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Modak' rel='stylesheet'>
+    <style>
+        p {
+            font-family: 'Modak';
+            font-size: 3.2vw;
+            letter-spacing: -0.011em;
+            opacity: 0.9;
+            margin: 0em 1em 0.4em 1em;
+            text-align: center;
+            line-height: 1;
+        }
+    </style>
+    <p>Map of Happiness</p>
+    <div id="okvir" class="okvir">
+        <input name="year" type="range" min="2015" max="2017" id="year-slider" value="2017">
+        <h3 id="selected-year">Year 2017</h3>
+        <div id="detalji" class="detalji">
+            <div class="detalji-drzava" id="drzava"></div>
+            <div class="detalji-vrijednost">
+                <span id="vrijednost"></span>
+            </div>
+        </div>
+
+        <script src="d3.js"></script>
+        <script src="mapa.js"></script>
+</body>
+
+</html>

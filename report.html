@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="report.css">
+    </link>
+    <title>Report</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Modak' rel='stylesheet'>
+    <style>
+        p {
+            font-family: 'Modak';
+            font-size: 3.2vw;
+            letter-spacing: -0.011em;
+            opacity: 0.9;
+            margin: 0em 1em 0.4em 1em;
+            text-align: center;
+            line-height: 1;
+        }
+    </style>
+    <p>Report</p>
+
+        <div id="okvir" class="okvir">
+
+            <div class="header__container">
+                <div class="header">
+                        <button id="gdp-per-capita-button" class="header__btn-group btn-group default-button" data-metric="GDP_per_Capita">GDP per Capita</button>
+                        <button id="social-support-button" class="header__btn-group btn-group" data-metric="Social_support">Social Support</button>
+                        <button id="healthy-life-expectancy-button" class="header__btn-group btn-group"
+                           data-metric="Healthy_Life_Expectancy">Healthy Life Expectancy</button>
+                        <button id="freedom-button" class="header__btn-group btn-group" data-metric="Freedom">Freedom</button>
+                        <button id="trust-button" class="header__btn-group btn-group" data-metric="Trust">Trust</button>
+                        <button id="generosity-button" class="header__btn-group btn-group" data-metric="Generosity">Generosity</button>
+
+                </div>
+                </div>
+        
+            <div id="detalji" class="detalji">
+                <div class="detalji-drzava">
+                    <span id="drzava"></span>
+                </div>
+                <div class="detalji-happiness">
+                    <span id="happiness"></span>
+                </div>
+                <div class="detalji-metrics">
+                     <span id="metrics"></span>
+                </div>
+               
+            </div>
+        </div>
+
+        
+        
+        <script src="d3.js"></script>
+        <script src="report.js"></script>
+        
+</body>
+
+</html>

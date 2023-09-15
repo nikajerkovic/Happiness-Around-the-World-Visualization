@@ -1,0 +1,155 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 2em;
+  letter-spacing: 0.08em;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+.okvir {
+  position: relative;
+}
+
+.zemlja {
+  fill: #e2f1f1;
+  stroke: none;
+}
+
+.mreza {
+  stroke: #cadddd;
+  fill: none;
+}
+
+.moja-lokacija {
+  fill: #8f97db;
+  stroke: white;
+}
+
+.drzava:hover {
+  /*boja za granice kad se hovera*/
+  stroke: rgb(255, 207, 69);
+  stroke-width: 2.2;
+}
+
+circle {
+  pointer-events: none;
+}
+
+.voronoi {
+  fill: transparent;
+}
+
+.detalji {
+  opacity: 0;
+  position: absolute;
+  top: -12px;
+  left: 0;
+  padding: 0.6em 1em;
+  background: #fff;
+  border: 1px solid #ddd;
+  z-index: 10;
+  transition: all 0.2s ease-out;
+  pointer-events: none;
+}
+
+.detalji:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: translate(-50%, 50%) rotate(45deg);
+  transform-origin: center center;
+  z-index: 10;
+}
+
+.detalji-drzava {
+  margin-bottom: 0.2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.detalji-vrijednost {
+  font-size: 0.8em;
+}
+
+.legenda-naslov {
+  fill: #576574;
+  text-anchor: middle;
+  font-weight: 900;
+  font-size: 0.95em;
+  letter-spacing: 0.01em;
+}
+
+.legenda-opis {
+  fill: #576574;
+  opacity: 0.6;
+  text-anchor: middle;
+  font-size: 0.7em;
+}
+
+.legenda-vrijednost {
+  fill: #576574;
+  dominant-baseline: middle;
+  font-size: 0.8em;
+}
+
+.legenda-vrijednost:first-of-type {
+  text-anchor: end;
+}
+
+.legend-title {
+  width: fit-content;
+  color: #26272b;
+  position: absolute;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#year-slider {
+  direction: rtl;
+  width: 120px;
+  height: 6px;
+  position: absolute;
+  top: 440px;
+  left: 60px;
+  border-radius: 10px;
+}
+
+#selected-year {
+  position: absolute;
+  color: #26272b;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  top: 445px;
+  left: 90px;
+}
+
+#year-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #18a795;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+#year-slider::-moz-range-thumb {
+  background: #1ca494;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: transparent;
+}
+
+#year-slider::-moz-range-progress {
+  width: 120px;
+  height: 6px;
+  background: #1ca494;
+}
